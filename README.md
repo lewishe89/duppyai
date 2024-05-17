@@ -1,6 +1,6 @@
-# DuppyAI
+# ShelBot
 
-DuppyAI is a PowerShell script designed to interact with the OpenAI API, allowing users to perform various tasks such as analyzing Windows Event Viewer logs, checking for and installing Windows updates, and more. The script leverages multiple helper functions to ensure modularity and maintainability.
+ShelBot is a PowerShell script designed to interact with the OpenAI API, allowing users to perform various tasks such as analyzing Windows Event Viewer logs, checking for and installing Windows updates, and more. The script leverages multiple helper functions to ensure modularity and maintainability.
 
 ## Features
 
@@ -29,13 +29,13 @@ DuppyAI is a PowerShell script designed to interact with the OpenAI API, allowin
 
 3. **Clone the repository and navigate to the script directory**:
     ```bash
-    git clone https://github.com/yourusername/duppyai.git
-    cd duppyai
+    git clone https://github.com/yourusername/shelbot.git
+    cd shelbot
     ```
 
 ## Usage
 
-The main script file is `duppyai.ps1`. You can run it with different commands and options to perform various tasks.
+The main script file is `shelbot.ps1`. You can run it with different commands and options to perform various tasks.
 
 ### Commands and Options
 
@@ -44,34 +44,34 @@ The main script file is `duppyai.ps1`. You can run it with different commands an
 - `-File <file>`: Provide a file containing the prompt.
 - `-Pipe`: Read the prompt from standard input.
 - `-GetErrors <days> <app>`: Get error events from the Event Viewer for the specified application in the last `<days>` days.
-- `-CheckUpdates`: Check for and install Windows updates, then provide an analysis using DuppyAI.
+- `-CheckUpdates`: Check for and install Windows updates, then provide an analysis using ShelBot.
 - `-Help`: Show the help message.
 
 ### Examples
 
 1. **Send a direct prompt to ChatGPT**:
     ```powershell
-    .\duppyai.ps1 "gpt-4" -Prompt "Explain the theory of relativity"
+    .\shelbot.ps1 "gpt-4" -Prompt "Explain the theory of relativity"
     ```
 
 2. **Send a prompt from a file**:
     ```powershell
-    .\duppyai.ps1 "gpt-4" -File "prompt.txt"
+    .\shelbot.ps1 "gpt-4" -File "prompt.txt"
     ```
 
 3. **Get error events from the Event Viewer for the last 3 days for the application 'MyApp'**:
     ```powershell
-    .\duppyai.ps1 -GetErrors 3 "MyApp"
+    .\shelbot.ps1 -GetErrors 3 "MyApp"
     ```
 
 4. **Check for and install Windows updates, then analyze the updates**:
     ```powershell
-    .\duppyai.ps1 -CheckUpdates
+    .\shelbot.ps1 -CheckUpdates
     ```
 
 5. **Show help message**:
     ```powershell
-    .\duppyai.ps1 -Help
+    .\shelbot.ps1 -Help
     ```
 
 ## Helper Scripts
